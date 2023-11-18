@@ -1,0 +1,19 @@
+algorithm checkpoint2 
+
+var
+    distinct_elements := set()
+    sum_of_distinct_elements := 0
+    begin 
+procedure sumOfDistinctElements(set1, set2)
+begin
+    for element in set1 do
+        distinct_elements.add(element)
+
+    for element in set2 do
+        distinct_elements.add(element)
+
+    sum_of_distinct_elements := sum(distinct_elements)
+end 
+end 
+call sumOfDistinctElements(Set1, Set2)
+write("Output:", sum_of_distinct_elements)
